@@ -13,7 +13,7 @@ import {
   NavBtnLink
 } from './styles';
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <React.Fragment>
       <Nav>
@@ -21,7 +21,7 @@ const Navbar = () => {
           <NavLogo to="/">
             dolla
           </NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
