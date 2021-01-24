@@ -17,7 +17,7 @@ import {
   Img
 } from './styles';
 
-const InfoSection = ({ lightBg, id, imgStart, topLine, headline, description, lightText, darkText, buttonLabel, img, alt }) => {
+const InfoSection = ({ lightBg, id, imgStart, topLine, headline, description, lightText, buttonLabel, darkButtonText, primary, img, alt }) => {
   return (
     <React.Fragment>
       <InfoContainer lightBg={lightBg} id={id}>
@@ -29,11 +29,11 @@ const InfoSection = ({ lightBg, id, imgStart, topLine, headline, description, li
                 <Heading lightText={lightText}>
                   {headline}
                 </Heading>
-                <Subtitle darkText={darkText}>
+                <Subtitle lightText={lightText}>
                   {description}
                 </Subtitle>
                 <BtnWrap>
-                  <Button to="home" smooth duration={500} spy exact="true" offset={-80} primary dark>
+                  <Button to="home" smooth duration={500} spy exact="true" primary={primary} darkButtonText={darkButtonText}>
                     {buttonLabel}
                   </Button>
                 </BtnWrap>
