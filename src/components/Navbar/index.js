@@ -24,6 +24,10 @@ const Navbar = ({ toggle }) => {
     }
   }
 
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav);
+  }, [])
+
   return (
     <React.Fragment>
       <Nav scrollNav={scrollNav}>

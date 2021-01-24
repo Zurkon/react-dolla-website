@@ -8,7 +8,7 @@ export const HeroContainer = styled.div`
   align-items: center;
   padding: 0 30px;
   /* 80px is the navbar height */
-  height: calc(100vh - 80px);
+  height: 100vh;
   position: relative;
   z-index: 1;
 
