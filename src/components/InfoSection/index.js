@@ -33,7 +33,7 @@ const InfoSection = ({ lightBg, id, imgStart, topLine, headline, description, li
                   {description}
                 </Subtitle>
                 <BtnWrap>
-                  <Button to="home" smooth duration={500} spy exact="true" primary={primary} darkButtonText={darkButtonText}>
+                  <Button to="home" smooth duration={500} spy exact="true" offset={-80} primary={primary} darkButtonText={darkButtonText}>
                     {buttonLabel}
                   </Button>
                 </BtnWrap>
